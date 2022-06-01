@@ -9,7 +9,13 @@ const Home: NextPage = () => {
       <div className="bg-gradient-to-t from-purple-500 bg-blue-300 h-screen p-20 flex mx-auto items-center justify-center">
         {/* Header */}
         <div className="">
-          <h1 className="text-6xl text-purple-800 pb-20">Sarah Cares Avl</h1>
+          <div className="flex">
+            <h1 className="text-8xl text-purple-800 pb-20">Sarah Cares Avl</h1>
+            <div className="pl-20 text-4xl text-white mt-2">
+              <p>Contact me!</p>
+              <p>828-555-5555</p>
+            </div>
+          </div>
           {/* Intro */}
           <div className="flex">
             <Image
@@ -21,18 +27,17 @@ const Home: NextPage = () => {
             <div className="pl-20">
               <p>
                 Let me take care of your needs so you don't have to worry about
-                you week.
+                your week.
               </p>
             </div>
           </div>
-          <div className="py-20"></div>
           {/* Services */}
           <div className="flex">
-            <div className="pl-20 ">
+            <div className="flex pl-20 items-center justify mx-20 px-40 list-disc">
               <ul>
-                <li>thing 1</li>
-                <li>thing 1</li>
-                <li>thing 1</li>
+                <li>House Services</li>
+                <li>Pet Sitting</li>
+                <li>Errand pickup</li>
               </ul>
             </div>
             <Image
@@ -43,12 +48,14 @@ const Home: NextPage = () => {
             />
           </div>
           {/* Footer */}
-          <div className="">
+          <div className="justify items-center">
             <a href="https://www.facebook.com/sarah.gibbs.165685">
               Check out my facebook
             </a>
           </div>
-          <div className="">Check out my insta</div>
+          <div>
+            <a className="">Check out my insta</a>
+          </div>
         </div>
       </div>
     </>
