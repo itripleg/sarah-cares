@@ -24,7 +24,7 @@ const Home: NextPage = () => {
               height={200}
               className="rounded-full"
             />
-            <div className="pl-20">
+            <div className="flex pl-20 content-center items-center">
               <p>
                 Let me take care of your needs so you don't have to worry about
                 your week.
@@ -32,9 +32,9 @@ const Home: NextPage = () => {
             </div>
           </div>
           {/* Services */}
-          <div className="flex">
-            <div className="flex pl-20 items-center justify mx-20 px-40 list-disc">
-              <ul>
+          <div className="flex justify-end pb-6">
+            <div className="flex pr-20 items-center">
+              <ul className="list-disc">
                 <li>House Services</li>
                 <li>Pet Sitting</li>
                 <li>Errand pickup</li>
@@ -47,15 +47,17 @@ const Home: NextPage = () => {
               className="rounded-full"
             />
           </div>
-          {/* Footer */}
-          <div className="justify items-center">
-            <a href="https://www.facebook.com/sarah.gibbs.165685">
-              Check out my facebook
-            </a>
-          </div>
-          <div>
-            <a className="">Check out my insta</a>
-          </div>
+        </div>
+      </div>
+      {/* Footer */}
+      <div className="flex flex-col content-center items-center bg-purple-900 w-full py-6 ">
+        <div className="">
+          <a href="https://www.facebook.com/sarah.gibbs.165685">
+            Check out my Facebook
+          </a>
+        </div>
+        <div>
+          <a className="">Check out my Insta</a>
         </div>
       </div>
     </>
